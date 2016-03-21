@@ -1,7 +1,0 @@
--- Create review table
-CREATE TABLE Review (
-  ReviewID INT NOT NULL  PRIMARY KEY IDENTITY(1,1),
-  ProductID INT NOT NULL,
-  Review NVARCHAR(MAX) NOT NULL,
-  Stars INT NOT NULL,
-  DateCreated DATETIME NOT NULL)
