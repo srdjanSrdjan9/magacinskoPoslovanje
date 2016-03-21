@@ -16,6 +16,7 @@ namespace Modeli
         public DateTime DatumIzdavanja { get; set; }
         public string Mesto { get; set; }
         public string RobuPrimio { get; set; }
+        public int RedniBroj { get; set; }
 
         public Dokument()
         {

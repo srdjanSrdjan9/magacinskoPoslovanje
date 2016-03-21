@@ -17,6 +17,7 @@ namespace Modeli
         public string Prezime { get; set; }
         public string Adresa { get; set; }
         public string Jmbg { get; set; }
+        public DateTime DatumRegistrovanja { get; set; }
 
         public Korisnik()
         {
