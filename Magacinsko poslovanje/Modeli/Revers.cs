@@ -12,12 +12,14 @@ namespace Modeli
     {
         [Browsable(false)]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Int64 ReversID { get; set; }
+        public long ReversID { get; set; }
         public string JedMere { get; set; }
         public int RedniBroj { get; set; }
         public int Ulaz { get; set; }
         public int Izlaz { get; set; }
         public int Ukupno { get; set; }
+        public int RobaID { get; set; }
+        public virtual Roba Roba { get; set; }
 
         public Revers()
         {

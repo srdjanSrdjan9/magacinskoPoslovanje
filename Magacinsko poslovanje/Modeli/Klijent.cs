@@ -8,17 +8,17 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Modeli
 {
-    public class Dobavljac
+    public class Klijent
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Browsable(false)]
-        public Int64 DobavljacID { get; set; }
+        public long KlijentID { get; set; }
         public string Naziv { get; set; }
         public string Adresa { get; set; }
         public int Pib { get; set; }
         public int MaticniBroj { get; set; }
 
-        public Dobavljac()
+        public Klijent()
         {
 
         }

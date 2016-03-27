@@ -12,7 +12,7 @@ namespace Modeli
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Browsable(false)]
-        public Int64 KorisnikID { get; set; }
+        public long KorisnikID { get; set; }
         public string Ime { get; set; }
         public string Prezime { get; set; }
         public string Adresa { get; set; }
@@ -21,7 +21,7 @@ namespace Modeli
 
         public Korisnik()
         {
-
+            DatumRegistrovanja = DateTime.Now;
         }
     }
 }

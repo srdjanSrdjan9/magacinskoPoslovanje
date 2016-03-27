@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity;
 
 namespace Modeli
 {
@@ -10,7 +11,9 @@ namespace Modeli
     {
         static void Main()
         {
-            
+            //MPContextDb context = new MPContextDb();
+            //context.Klase.Add(new Klasa() { KlasaID = 1, NazivKlase = "Prva klasa" });
+            //context.SaveChanges();
         }
     }
 }

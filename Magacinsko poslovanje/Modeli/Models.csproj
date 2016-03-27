@@ -50,20 +50,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dobavljac.cs" />
+    <Compile Include="Klijent.cs" />
     <Compile Include="Dokument.cs" />
     <Compile Include="Klasa.cs" />
+    <Compile Include="Kompenzacija.cs" />
     <Compile Include="Korisnik.cs" />
-    <Compile Include="Kupac.cs" />
+    <Compile Include="Migrations\201603260910553_DbInitialization.cs" />
+    <Compile Include="Migrations\201603260910553_DbInitialization.Designer.cs">
+      <DependentUpon>201603260910553_DbInitialization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603261007243_IspravljenRequired.cs" />
+    <Compile Include="Migrations\201603261007243_IspravljenRequired.Designer.cs">
+      <DependentUpon>201603261007243_IspravljenRequired.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603261028096_TestPodataka.cs" />
+    <Compile Include="Migrations\201603261028096_TestPodataka.Designer.cs">
+      <DependentUpon>201603261028096_TestPodataka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="MPContextDb.cs" />
+    <Compile Include="OtkupniList.cs" />
+    <Compile Include="Otpremnica.cs" />
+    <Compile Include="Prijemnica.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Revers.cs" />
+    <Compile Include="Roba.cs" />
     <Compile Include="Stanje.cs" />
+    <Compile Include="StanjeRobe.cs" />
+    <Compile Include="StavkaOtkupnogLista.cs" />
+    <Compile Include="StavkaOtpremnice.cs" />
+    <Compile Include="StavkaPrijemnice.cs" />
     <Compile Include="Vrsta.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201603260910553_DbInitialization.resx">
+      <DependentUpon>201603260910553_DbInitialization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603261007243_IspravljenRequired.resx">
+      <DependentUpon>201603261007243_IspravljenRequired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603261028096_TestPodataka.resx">
+      <DependentUpon>201603261028096_TestPodataka.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

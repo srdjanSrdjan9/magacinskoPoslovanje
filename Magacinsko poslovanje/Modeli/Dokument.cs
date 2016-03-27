@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace Modeli
 {
@@ -12,7 +13,7 @@ namespace Modeli
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Browsable(false)]
-        public Int64 DokumentID { get; set; }
+        public long DokumentID { get; set; }
         public DateTime DatumIzdavanja { get; set; }
         public string Mesto { get; set; }
         public string RobuPrimio { get; set; }
@@ -20,7 +21,7 @@ namespace Modeli
 
         public Dokument()
         {
-
+            DatumIzdavanja = DateTime.Now;
         }
     }
 }
