@@ -12,7 +12,7 @@ namespace Modeli
         static void Main()
         {
             //MPContextDb context = new MPContextDb();
-            //context.Klase.Add(new Klasa() { KlasaID = 1, NazivKlase = "Prva klasa" });
+            //context.Klase.Add(new Klasa() { KlasaID = 2, NazivKlase = "Druga klasa" });
             //context.SaveChanges();
         }
     }

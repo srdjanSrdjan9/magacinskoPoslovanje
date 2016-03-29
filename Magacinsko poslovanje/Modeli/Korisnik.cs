@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace Modeli
 {
@@ -16,6 +17,7 @@ namespace Modeli
         public string Ime { get; set; }
         public string Prezime { get; set; }
         public string Adresa { get; set; }
+        [StringLength(13, ErrorMessage = "JMBG korisnika mora imati tacno 13 karaktera!")]
         public string Jmbg { get; set; }
         public DateTime DatumRegistrovanja { get; set; }
 
