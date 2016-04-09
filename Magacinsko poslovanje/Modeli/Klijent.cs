@@ -15,8 +15,8 @@ namespace Modeli
         public long KlijentID { get; set; }
         public string Naziv { get; set; }
         public string Adresa { get; set; }
-        public int Pib { get; set; }
-        public int MaticniBroj { get; set; }
+        public string Pib { get; set; }
+        public string MaticniBroj { get; set; }
 
         public Klijent()
         {

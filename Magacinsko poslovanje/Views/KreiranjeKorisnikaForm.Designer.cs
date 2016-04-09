@@ -128,6 +128,7 @@
             this.PonistiButton.TabIndex = 9;
             this.PonistiButton.Text = "Poništi";
             this.PonistiButton.UseVisualStyleBackColor = true;
+            this.PonistiButton.Click += new System.EventHandler(this.PonistiButton_Click);
             // 
             // MestoLabel
             // 
